@@ -6,7 +6,10 @@ import { extractContributions, displayContiributions } from './functions.js'
 const userName = readlineSync.question(
   'enter github username you want to see -> '
 )
-const accessToken = readlineSync.question('enter your github access token -> ')
+const accessToken = readlineSync.question(
+  'enter your github access token -> ',
+  { hideEchoBack: true }
+)
 
 const query = `
 query($userName:String!) {
