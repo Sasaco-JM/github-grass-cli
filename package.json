@@ -1,0 +1,40 @@
+{
+  "name": "github-grass-cli",
+  "version": "0.0.1",
+  "description": "CIL tool to show your github contribution history.",
+  "bin": {
+    "github-grass-cli": "index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sasaco-JM/github-grass-cli.git"
+  },
+  "keywords": [
+    "github-grass-cli"
+  ],
+  "author": "Hikoichi Sasaki <sasaki.npm@gmail.com> (https://github.com/Sasaco-JM)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sasaco-JM/github-grass-cli/issues"
+  },
+  "homepage": "https://github.com/Sasaco-JM/github-grass-cli#readme",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "2.8.1",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^7.1.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.0",
+    "readline-sync": "^1.4.10"
+  }
+}
