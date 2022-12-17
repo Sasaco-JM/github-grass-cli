@@ -31,6 +31,3 @@ github-grass-cli
 ```
 
 
-<img width="766" alt="image" src="https://user-images.githubusercontent.com/78665068/208249851-3d5a881d-a173-4bb3-b9ec-cafa79c897b0.png">
-
-
