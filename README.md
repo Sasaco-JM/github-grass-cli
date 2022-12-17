@@ -27,7 +27,7 @@ https://github.com/settings/tokens
 以下コマンドを実行後、草を表示したいGithubのアカウント名→アクセストークンの順に入力してください。
 
 ```
-github-grass-cli
+npx github-grass-cli
 ```
 <img width="772" alt="image" src="https://user-images.githubusercontent.com/78665068/208250063-6d10db9b-cccf-442b-9d05-84bcb7000d8f.png">
 
