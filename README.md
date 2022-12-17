@@ -29,6 +29,7 @@ https://github.com/settings/tokens
 ```
 npx github-grass-cli
 ```
-<img width="772" alt="image" src="https://user-images.githubusercontent.com/78665068/208250063-6d10db9b-cccf-442b-9d05-84bcb7000d8f.png">
+<img width="781" alt="image" src="https://user-images.githubusercontent.com/78665068/208251499-ed7d2259-7221-4010-890d-3a9f7fe50980.png">
+
 
 
