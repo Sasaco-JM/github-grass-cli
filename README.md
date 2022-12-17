@@ -4,7 +4,7 @@ CLIでGithubユーザーのコミット状況が確認できます。
 ## インストール方法
 コマンドライン上で以下コマンドを実行。
 ```
-$ npm i -g github-grass-cli
+$ npm i github-grass-cli
 ```
 ## 使用方法
 ### 事前準備
