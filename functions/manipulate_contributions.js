@@ -34,18 +34,10 @@ function sortingContirbutions (contributions) {
   for (let i = 0; i < 7; i++) {
     contributionsByDayOfTheWeek[i] = []
   }
-  let i = 0
-  let j = 0
-  contributionsByWeeks.forEach((week) => {
-    week.contributionDays.forEach((day) => {
-      contributionsByDayOfTheWeek[i][j] = day
 
-      if (i === 6) {
-        i = 0
-        j += 1
-      } else {
-        i += 1
-      }
+  contributionsByWeeks.forEach((week, i) => {
+    week.contributionDays.forEach((day, j) => {
+      contributionsByDayOfTheWeek[j][i] = day
     })
   })
 
@@ -95,28 +87,24 @@ function addMonths (sortedContributions, replacedContributions) {
     'Nov',
     'Dec'
   ]
-  const months = []
-  sortedContributions[0].forEach((day) => {
-    const contributionDate = new Date(day.date)
-    const contributionMonth = contributionDate.getMonth()
 
-    months.push(contributionMonth)
+  const months = sortedContributions[0].map(function (day) {
+    const contributionDate = new Date(day.date)
+    return contributionDate.getMonth()
   })
 
   const englishContributionMonths = []
   let lastMonth = months[0]
   let monthCount = 0
   months.forEach((month, index, months) => {
-    if (month !== lastMonth || index === months.length - 1) {
-      if (index === months.length - 1) {
-        englishContributionMonths.push(englishMonths[lastMonth])
-      } else {
-        let paddedMonth = `${englishMonths[lastMonth]}           `
-        paddedMonth = paddedMonth.slice(0, 2 * monthCount)
-        englishContributionMonths.push(paddedMonth)
+    if (index === months.length - 1) {
+      englishContributionMonths.push(englishMonths[lastMonth])
+    } else if (month !== lastMonth) {
+      let paddedMonth = `${englishMonths[lastMonth]}           `
+      paddedMonth = paddedMonth.slice(0, 2 * monthCount)
+      englishContributionMonths.push(paddedMonth)
 
-        monthCount = 0
-      }
+      monthCount = 0
     }
     monthCount += 1
     lastMonth = month
