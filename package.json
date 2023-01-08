@@ -1,6 +1,6 @@
 {
   "name": "github-grass-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CIL tool to show your github contribution history.",
   "bin": {
     "github-grass-cli": "index.js"
